@@ -1,16 +1,16 @@
-const createChat = (data) =>{
+const createChat = (data:any) =>{
   
 }
 
-const findChat = (data) =>{
+const findChat = (data:any) =>{
   
 }
 
-const updateChat = (data) =>{
+const updateChat = (data:any) =>{
   
 }
 
-const deleteChat = (data) =>{
+const deleteChat = (data:any) =>{
   
 }
 

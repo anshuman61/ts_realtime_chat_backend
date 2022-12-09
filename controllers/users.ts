@@ -2,7 +2,7 @@ const createUser = ()=>{
   
 }
 
-const findUser= (data)=>{
+const findUser= (data:any)=>{
   console.log(data)
   
 }

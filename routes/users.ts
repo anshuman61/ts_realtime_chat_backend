@@ -8,7 +8,7 @@ const users= {
 }
 
 const usersRoute= (method:string,data:any)=>{
-  users[method](data)
+  users[method as keyof typeof users](data)
 }
 
 export {usersRoute}

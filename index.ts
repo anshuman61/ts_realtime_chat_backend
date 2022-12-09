@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-app.get('/', (req, res) => {
+app.get('/', (req:any, res:any) => {
   res.sendFile(path.resolve('./views/index.html'));
 });
 
