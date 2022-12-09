@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+.build
+
+
+
+#ignore replit files
+.replit
+replit.nix
