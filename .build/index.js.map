@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["import express from 'express';\nimport http from 'http';\nimport path from 'path';\nimport { Server } from 'socket.io';\nimport {routes} from './routes';\n\nconst app = express();\nconst server = http.createServer(app);\nconst io = new Server(server);\n\napp.get('/', (req, res) => {\n  res.sendFile(path.resolve('./views/index.html'));\n});\n\nio.on('connection', (socket) => {\n  //console.log('a user connected');\n  socket.on('GET',(data)=>{\n    routes('GET',data);\n  });\n  socket.on('POST',(data)=>{\n    routes('POST',data);\n  });\n  socket.on('PATCH',(data)=>{\n    routes('PATCH',data);\n  });\n  socket.on('DELETE',(data)=>{\n    routes('DELETE',data);\n  })\n});\n\nserver.listen(3000, () => {\n  console.log('listening on :3000');\n});"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,qBAAoB;AACpB,kBAAiB;AACjB,kBAAiB;AACjB,oBAAuB;AACvB,oBAAqB;AAErB,MAAM,MAAM;AACZ,MAAM,SAAS,oBAAK,aAAa;AACjC,MAAM,KAAK,IAAI,qBAAO;AAEtB,IAAI,IAAI,KAAK,CAAC,KAAK,QAAQ;AACzB,MAAI,SAAS,oBAAK,QAAQ;AAAA;AAG5B,GAAG,GAAG,cAAc,CAAC,WAAW;AAE9B,SAAO,GAAG,OAAM,CAAC,SAAO;AACtB,8BAAO,OAAM;AAAA;AAEf,SAAO,GAAG,QAAO,CAAC,SAAO;AACvB,8BAAO,QAAO;AAAA;AAEhB,SAAO,GAAG,SAAQ,CAAC,SAAO;AACxB,8BAAO,SAAQ;AAAA;AAEjB,SAAO,GAAG,UAAS,CAAC,SAAO;AACzB,8BAAO,UAAS;AAAA;AAAA;AAIpB,OAAO,OAAO,KAAM,MAAM;AACxB,UAAQ,IAAI;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../controllers/users.ts"],
+  "sourcesContent": ["const createUser = ()=>{\n  \n}\n\nconst findUser= (data)=>{\n  console.log(data)\n  \n}\n\nconst updateUser= ()=>{\n  \n}\n\nconst deleteUser=()=>{\n\n  \n}\n\nexport {createUser,findUser,updateUser,deleteUser}"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAAM,aAAa,MAAI;AAAA;AAIvB,MAAM,WAAU,CAAC,SAAO;AACtB,UAAQ,IAAI;AAAA;AAId,MAAM,aAAY,MAAI;AAAA;AAItB,MAAM,aAAW,MAAI;AAAA;",
+  "names": []
+}

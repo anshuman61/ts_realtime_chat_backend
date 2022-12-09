@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../routes.ts"],
+  "sourcesContent": ["import {usersRoute} from './routes/users'\n\n\n\nconst allRoutes = {\n  users:usersRoute\n}\n\nconst main = (method:string,data:any)=>{\n  allRoutes[data.path](method,data)\n}\n\nexport {main as routes};"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,mBAAyB;AAIzB,MAAM,YAAY;AAAA,EAChB,OAAM;AAAA;AAGR,MAAM,OAAO,CAAC,QAAc,SAAW;AACrC,YAAU,KAAK,MAAM,QAAO;AAAA;",
+  "names": []
+}
