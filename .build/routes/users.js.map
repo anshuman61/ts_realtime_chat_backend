@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../routes/users.ts"],
-  "sourcesContent": ["import  {createUser,findUser,updateUser,deleteUser} from '../controllers/users'\n\nconst users= {\n  GET:findUser,\n  POST:createUser,\n  UPDATE:updateUser,\n  DELETE:deleteUser\n}\n\nconst usersRoute= (method:string,data:any)=>{\n  users[method](data)\n}\n\nexport {usersRoute}"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,mBAAyD;AAEzD,MAAM,QAAO;AAAA,EACX,KAAI;AAAA,EACJ,MAAK;AAAA,EACL,QAAO;AAAA,EACP,QAAO;AAAA;AAGT,MAAM,aAAY,CAAC,QAAc,SAAW;AAC1C,QAAM,QAAQ;AAAA;",
-  "names": []
-}
