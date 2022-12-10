@@ -8,7 +8,7 @@ const users = {
     UPDATE: users_1.updateUser,
     DELETE: users_1.deleteUser
 };
-const usersRoute = (method, data) => {
-    users[method](data);
+const usersRoute = (method, data, socket) => {
+    users[method](data, socket);
 };
 exports.usersRoute = usersRoute;

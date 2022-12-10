@@ -5,7 +5,7 @@ const users_1 = require("./routes/users");
 const allRoutes = {
     users: users_1.usersRoute
 };
-const main = (method, data) => {
-    allRoutes[data.path](method, data);
+const main = (method, data, socket) => {
+    allRoutes[data.path](method, data, socket);
 };
 exports.routes = main;

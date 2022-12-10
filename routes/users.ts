@@ -1,14 +1,14 @@
-import  {createUser,findUser,updateUser,deleteUser} from '../controllers/users'
+import { createUser, findUser, updateUser, deleteUser } from '../controllers/users'
 
-const users= {
-  GET:findUser,
-  POST:createUser,
-  UPDATE:updateUser,
-  DELETE:deleteUser
+const users = {
+  GET: findUser,
+  POST: createUser,
+  UPDATE: updateUser,
+  DELETE: deleteUser
 }
 
-const usersRoute= (method:string,data:any)=>{
-  users[method as keyof typeof users](data)
+const usersRoute = (method: string, data: any, socket: any) => {
+  users[method as keyof typeof users](data, socket)
 }
 
-export {usersRoute}
+export { usersRoute }

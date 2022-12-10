@@ -1,13 +1,12 @@
-import {usersRoute} from './routes/users'
-import {SocketData,TypeSocketData} from './types'
+import { usersRoute } from './routes/users'
 
 
 const allRoutes = {
-  users:usersRoute
+  users: usersRoute
 }
 
-const main = (method:string,data:SocketData)=>{
-  allRoutes[data.path as keyof typeof allRoutes](method,data)
+const main = (method: string, data: SocketData, socket: any) => {
+  allRoutes[data.path as keyof typeof allRoutes](method, data, socket)
 }
 
-export {main as routes};
+export { main as routes };
