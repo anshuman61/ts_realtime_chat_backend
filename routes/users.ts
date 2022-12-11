@@ -1,6 +1,6 @@
 import { createUser, findUser, updateUser, deleteUser } from '../controllers/users'
 
-const users = {
+const controllers = {
   GET: findUser,
   POST: createUser,
   UPDATE: updateUser,
@@ -8,7 +8,7 @@ const users = {
 }
 
 const usersRoute = (method: string, data: any, socket: any) => {
-  users[method as keyof typeof users](data, socket)
+  controllers[method as keyof typeof controllers](data, socket)
 }
 
 export { usersRoute }

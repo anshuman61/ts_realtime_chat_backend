@@ -1,7 +1,6 @@
-import { DBConfigs } from '../configs/db'
-
-const chats = DBConfigs.db1.tableRefs.chats
-const connection = DBConfigs.db1.connection
+import { Db1 } from "../db/db"
+const chats = Db1.tableRefs.chats
+const connection = Db1.connection
 
 const createChat = async (data: any) => {
     const chat = await chats.insert(data).run(connection)

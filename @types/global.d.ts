@@ -1,12 +1,13 @@
 declare global {
-    export interface SocketData {
+    interface SocketData {
         path: string,
         body: any
     }
 
-    export interface TypeSocketData {
+    interface TypeSocketData {
         method: string,
         data: SocketData
     }
 }
-export { }
+
+export { };

@@ -1,4 +1,5 @@
 import { usersRoute } from './routes/users'
+import { chatsRoute } from './routes/chats'
 
 
 const allRoutes = {
