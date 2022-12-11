@@ -7,6 +7,11 @@
   resolved "https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
 
+"@typeguards/core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@typeguards/core/-/core-1.1.0.tgz#54153076b53bc7fe24d9f342539d263b27704b7e"
+  integrity sha512-+Hbzure1G7etN1C7w/iGWRjfj15c2gSTaJVYbuVNKUOYm+VY+GZhM98oBZ6MgN19r+/K/GFbi6R5DacQUwkKEg==
+
 "@types/body-parser@*":
   version "1.19.2"
   resolved "https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.2.tgz"
@@ -133,16 +138,6 @@ binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
-
-"bluebird@>= 3.0.1":
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
-  integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
-
-bluebird@~2.10.2:
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.10.2.tgz#024a5517295308857f14f91f1106fc3b555f446b"
-  integrity sha512-ebc2LqTYQlFqC6wTQl9gknHsqh4EKBLR++8VzGMSh7CnsOedhymVD1ShVl19TRTx6WeMd1b5xXuKo8m6oP8pYQ==
 
 body-parser@1.20.1:
   version "1.20.1"
@@ -734,13 +729,6 @@ rethinkdb-ts@^2.5.0:
   resolved "https://registry.yarnpkg.com/rethinkdb-ts/-/rethinkdb-ts-2.5.0.tgz#a13edf0ef273465b76745a2ebf971a684a51d5f8"
   integrity sha512-KK67yAIuNN5WUWG67a1kc5RsliRHQ/BVhrsGhkp2yBN1pMQbV+nSu9lrXe30ww/OTeYsX2DZDDcZbBx9CprAFg==
 
-rethinkdbdash@~2.3.0:
-  version "2.3.31"
-  resolved "https://registry.yarnpkg.com/rethinkdbdash/-/rethinkdbdash-2.3.31.tgz#fe2f73d1fa6e6f5d96d8e881292013cf6dca914d"
-  integrity sha512-6nXrKFjdg2Ug0YpdmPWSvyD/2EisHnFNt4FWZ74dcXGK48ievSv+cNFTmVv+KjLi6I9CCf6w4CKZ6yCYTfMfdQ==
-  dependencies:
-    bluebird ">= 3.0.1"
-
 rxjs@^7.0.0:
   version "7.6.0"
   resolved "https://registry.npmjs.org/rxjs/-/rxjs-7.6.0.tgz"
@@ -895,15 +883,6 @@ supports-color@^8.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-thinky@^2.3.9:
-  version "2.3.9"
-  resolved "https://registry.yarnpkg.com/thinky/-/thinky-2.3.9.tgz#16f80868a65c7fb490d316ddb342308f7e290cfa"
-  integrity sha512-4zp4wIQdwqyHP9CVoOa0/AV3GnKprHfOOVRj1KigtVcWi1DT7Eut52DVfX9nyI59399S+N6e3J5+4+y64ruf/g==
-  dependencies:
-    bluebird "~2.10.2"
-    rethinkdbdash "~2.3.0"
-    validator "~3.34.0"
-
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz"
@@ -960,11 +939,6 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
-
-validator@~3.34.0:
-  version "3.34.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-3.34.0.tgz#67cb418121f8fbaef597d97376d61b0db5937cc6"
-  integrity sha512-MhsDIQ9JAK5nq2szXjfXSJBpLetXd1laLqB5rPCQ9Xvuv5nRs0Wu8Uk3jORaiun7Egmh6VKYL7a7u7hhV9QFZQ==
 
 vary@^1, vary@~1.1.2:
   version "1.1.2"

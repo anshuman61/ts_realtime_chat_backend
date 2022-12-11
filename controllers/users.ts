@@ -11,12 +11,13 @@ const findUser = async (data: SocketData, socket: any) => {
 }
 
 const updateUser = async (data: SocketData, socket: any) => {
-
+  const user = await userService.updateUser(data.body)
+  socket.emit('users', { operation: 'update', data: user })
 }
 
 const deleteUser = async (data: SocketData, socket: any) => {
-
-
+  const user = await userService.deleteUser(data.body)
+  socket.emit('users', { operation: 'delete', data: user })
 }
 
 export { createUser, findUser, updateUser, deleteUser }

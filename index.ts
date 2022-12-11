@@ -1,12 +1,8 @@
-import express from 'express'
-import http from 'http'
+import { io, app, server } from './utlis/server'
 import path from 'path'
-import { Server } from 'socket.io'
+
 import { Db1 } from './db/db'
 
-const app = express()
-const server = http.createServer(app)
-const io = new Server(server)
 Db1.connect().then(() => {
   const { routes } = require('./routes')
   io.on('connection', (socket) => {
