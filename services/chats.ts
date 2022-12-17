@@ -7,18 +7,18 @@ const createChat = async (data: any) => {
     return chat
 }
 
-const findChat = async (data: any) => {
-    const chat = await chats.filter(data).run(connection)
+const findChat = async (filters: any) => {
+    const chat = await chats.filter(filters).run(connection)
     return chat
 }
 
-const updateChat = async (data: any) => {
-    const chat = await chats.filter(data).update(data).run(connection)
+const updateChat = async (filters: any, update: any) => {
+    const chat = await chats.filter(filters).update(update).run(connection)
     return chat
 }
 
-const deleteChat = async (data: any) => {
-    const chat = await chats.filter(data).delete().run(connection)
+const deleteChat = async (filters: any) => {
+    const chat = await chats.filter(filters).delete().run(connection)
     return chat
 }
 

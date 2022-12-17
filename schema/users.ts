@@ -1,22 +1,38 @@
 import T from '@typeguards/core'
 
 const userSchema = {
-    user_id: T.String,
+    id: T.String,
     username: T.String,
-    full_name: {
+    fullName: {
         first: T.String,
-        last: T.String
+        last: T.String,
     },
     email: T.String,
+    phone: T.String,
     password: T.String,
-    socket_id: T.String,
-    created_at: T.Date,
-    updated_at: T.Date,
-    geo: {
-        lat: T.Number,
-        long: T.Number,
-        country: T.String,
-        others: T.Object
+    socketId: T.String,
+    createdAt: T.String,
+    updatedAt: T.String,
+    lastSeen: T.String,
+    status: T.String,
+    profilePic: T.String,
+    isOnline: T.Boolean,
+    isBlocked: T.Boolean,
+    isDeleted: T.Boolean,
+    isVerified: T.Boolean,
+    userMetaData: {
+        geo: {
+            lat: T.Number,
+            long: T.Number,
+            country: T.String,
+            others: T.Object,
+        },
+        lastSeenSettings: T.Object,
+        statusSettings: T.Object,
+        profilePicSettings: T.Object,
+        isOnlineSettings: T.Object,
+        isTypingSettings: T.Object,
+        isAccountPrivate: T.Boolean, // true -> account is private, false -> account is public
     },
     tokens: T.Array,
 }

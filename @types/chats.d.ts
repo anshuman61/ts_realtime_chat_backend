@@ -12,18 +12,17 @@ declare global {
             isMedia: boolean | false;
             isNotification: boolean | false;
         };
-        messageStatus: {
+        messageMetaData: {
             isRead: boolean | false;
             isDelivered: boolean | false;
+            expiryTimeStamp: number | null;
         },
-        isMedia: boolean | false;
         media: {
             type: string;
             url: string;
             title: string;
             base64data: string;
         } | null;
-
     }
 }
 

@@ -15,4 +15,8 @@ const emitMessage = (data: chatData, socket: any) => {
     }
 }
 
-export { emitMessage }
+const emitData = (data: any) => {
+    io.to(data.receiver.id).emit('DATA', data);
+}
+
+export { emitMessage, emitData }

@@ -7,18 +7,18 @@ const createUser = async (data: any) => {
     return user
 }
 
-const findUser = async (data: any) => {
-    const user = await users.filter(data).run(connection)
+const findUser = async (filters: any) => {
+    const user = await users.filter(filters).run(connection)
     return user
 }
 
-const updateUser = async (data: any) => {
-    const user = await users.filter(data).update(data).run(connection)
+const updateUser = async (filters: any, body: any) => {
+    const user = await users.filter(filters).update(body).run(connection)
     return user
 }
 
-const deleteUser = async (data: any) => {
-    const user = await users.filter(data).delete().run(connection)
+const deleteUser = async (filters: any) => {
+    const user = await users.filter(filters).delete().run(connection)
     return user
 }
 

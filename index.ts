@@ -1,4 +1,4 @@
-import { io, app, server } from './utlis/server'
+import { io, app, server } from './utils/server'
 import path from 'path'
 
 import { Db1 } from './db/db'
