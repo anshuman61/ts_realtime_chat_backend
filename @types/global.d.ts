@@ -1,7 +1,8 @@
 declare global {
     interface SocketData {
         path: string,
-        body: any
+        body: any,
+        headers: any
     }
 
     interface TypeSocketData {

@@ -3,7 +3,8 @@ import { chatsRoute } from './routes/chats'
 
 
 const allRoutes = {
-  users: usersRoute
+  users: usersRoute,
+  chats: chatsRoute,
 }
 
 const main = (method: string, data: SocketData, socket: any) => {
